@@ -1,0 +1,18 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block inline_field_sets %}
+    <div class="submit-row">
+        <button onclick="send()">Copy email</button>
+    </div>
+<script>
+
+    function send(){
+        const url = document.location.href;
+        console.log(url);
+    }
+
+</script>
+
+    {{ block.super }}
+{% endblock %}
